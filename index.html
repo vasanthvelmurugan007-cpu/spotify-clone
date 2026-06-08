@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web Player Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fab fa-spotify"></i>
+                <span>Spotify</span>
+            </div>
+            
+            <nav class="nav-links">
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                    <li><a href="#"><i class="fas fa-search"></i> <span>Search</span></a></li>
+                    <li><a href="#"><i class="fas fa-book-open"></i> <span>Your Library</span></a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav-links secondary">
+                <ul>
+                    <li><a href="#"><div class="icon-box add"><i class="fas fa-plus"></i></div> <span>Create Playlist</span></a></li>
+                    <li><a href="#"><div class="icon-box liked"><i class="fas fa-heart"></i></div> <span>Liked Songs</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="playlists scrollable">
+                <ul>
+                    <li><a href="#">Chill Vibes</a></li>
+                    <li><a href="#">Focus Flow</a></li>
+                    <li><a href="#">Workout Mix</a></li>
+                    <li><a href="#">Top 50 - Global</a></li>
+                    <li><a href="#">Discover Weekly</a></li>
+                    <li><a href="#">Release Radar</a></li>
+                    <li><a href="#">Daily Mix 1</a></li>
+                    <li><a href="#">Daily Mix 2</a></li>
+                    <li><a href="#">Daily Mix 3</a></li>
+                    <li><a href="#">Acoustic Covers</a></li>
+                    <li><a href="#">Coding Mode</a></li>
+                    <li><a href="#">Lo-Fi Beats</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="nav-arrows">
+                    <button class="arrow-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="arrow-btn forward"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="topbar-actions">
+                    <button class="upgrade-btn">Explore Premium</button>
+                    <button class="install-btn"><i class="far fa-arrow-alt-circle-down"></i> Install App</button>
+                    <div class="profile">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Profile">
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-scrollable">
+                <!-- Greeting -->
+                <section class="greeting-section">
+                    <h2 id="greeting">Good evening</h2>
+                    <div class="quick-picks">
+                        <div class="quick-pick-card">
+                            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&h=500&fit=crop" alt="Chill Vibes">
+                            <span>Chill Vibes</span>
+                            <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="quick-pick-card">
+                            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&h=500&fit=crop" alt="Daily Mix 1">
+                            <span>Daily Mix 1</span>
+                            <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="quick-pick-card">
+                            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500&h=500&fit=crop" alt="Discover Weekly">
+                            <span>Discover Weekly</span>
+                            <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="quick-pick-card">
+                            <img src="https://images.unsplash.com/photo-1493225457124-a1a2a5956093?w=500&h=500&fit=crop" alt="Focus Flow">
+                            <span>Focus Flow</span>
+                            <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="quick-pick-card">
+                            <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=500&h=500&fit=crop" alt="Release Radar">
+                            <span>Release Radar</span>
+                            <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="quick-pick-card">
+                            <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=500&h=500&fit=crop" alt="Workout Mix">
+                            <span>Workout Mix</span>
+                            <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Made For You Section -->
+                <section class="shelf-section">
+                    <div class="shelf-header">
+                        <h2>Made For You</h2>
+                        <a href="#">Show all</a>
+                    </div>
+                    <div class="shelf-grid">
+                        <div class="album-card">
+                            <div class="album-cover">
+                                <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=500&h=500&fit=crop" alt="Mix 1">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Daily Mix 1</h3>
+                            <p>Eminem, 50 Cent, Dr. Dre and more</p>
+                        </div>
+                        <div class="album-card">
+                            <div class="album-cover">
+                                <img src="https://images.unsplash.com/photo-1493225457124-a1a2a5956093?w=500&h=500&fit=crop" alt="Mix 2">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Daily Mix 2</h3>
+                            <p>Linkin Park, Green Day, Blink-182</p>
+                        </div>
+                        <div class="album-card">
+                            <div class="album-cover">
+                                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&h=500&fit=crop" alt="Mix 3">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Daily Mix 3</h3>
+                            <p>Hans Zimmer, John Williams</p>
+                        </div>
+                        <div class="album-card">
+                            <div class="album-cover">
+                                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&h=500&fit=crop" alt="Mix 4">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Daily Mix 4</h3>
+                            <p>Dua Lipa, The Weeknd, Ariana Grande</p>
+                        </div>
+                        <div class="album-card">
+                            <div class="album-cover">
+                                <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=500&h=500&fit=crop" alt="Mix 5">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Daily Mix 5</h3>
+                            <p>Arctic Monkeys, The Strokes, Tame Impala</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Popular Radios -->
+                <section class="shelf-section">
+                    <div class="shelf-header">
+                        <h2>Popular Radio</h2>
+                        <a href="#">Show all</a>
+                    </div>
+                    <div class="shelf-grid">
+                        <div class="album-card">
+                            <div class="album-cover">
+                                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop" alt="Radio 1">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Pop Radio</h3>
+                            <p>By Spotify</p>
+                        </div>
+                        <div class="album-card">
+                            <div class="album-cover">
+                                <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=500&h=500&fit=crop" alt="Radio 2">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Rock Classics</h3>
+                            <p>By Spotify</p>
+                        </div>
+                        <div class="album-card">
+                            <div class="album-cover">
+                                <img src="https://images.unsplash.com/photo-1516280440502-a2f4ccbd64ee?w=500&h=500&fit=crop" alt="Radio 3">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Hip Hop Controller</h3>
+                            <p>By Spotify</p>
+                        </div>
+                        <div class="album-card">
+                            <div class="album-cover">
+                                <img src="https://images.unsplash.com/photo-1614613535808-3196b28eb6ee?w=500&h=500&fit=crop" alt="Radio 4">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Acoustic Hits</h3>
+                            <p>By Spotify</p>
+                        </div>
+                        <div class="album-card">
+                            <div class="album-cover">
+                                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&h=500&fit=crop" alt="Radio 5">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Electronic Mix</h3>
+                            <p>By Spotify</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <footer class="content-footer">
+                    <div class="footer-links">
+                        <div class="footer-col">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">For the Record</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Communities</h4>
+                            <ul>
+                                <li><a href="#">For Artists</a></li>
+                                <li><a href="#">Developers</a></li>
+                                <li><a href="#">Advertising</a></li>
+                                <li><a href="#">Investors</a></li>
+                                <li><a href="#">Vendors</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Useful links</h4>
+                            <ul>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Free Mobile App</a></li>
+                            </ul>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="bottom-links">
+                            <a href="#">Legal</a>
+                            <a href="#">Privacy Center</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Cookies</a>
+                            <a href="#">About Ads</a>
+                            <a href="#">Accessibility</a>
+                        </div>
+                        <p>&copy; 2026 Spotify AB Clone</p>
+                    </div>
+                </footer>
+            </div>
+        </main>
+
+        <!-- Playback Bar -->
+        <footer class="playback-bar">
+            <!-- Now Playing info -->
+            <div class="now-playing">
+                <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=500&h=500&fit=crop" alt="Album Art" class="now-playing-img">
+                <div class="track-info">
+                    <div class="track-title"><a href="#">Midnight City</a></div>
+                    <div class="track-artist"><a href="#">M83</a></div>
+                </div>
+                <button class="action-btn like-btn"><i class="far fa-heart"></i></button>
+                <button class="action-btn pip-btn"><i class="fas fa-desktop"></i></button>
+            </div>
+
+            <!-- Player Controls -->
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button class="action-btn shuffle-btn" title="Enable shuffle"><i class="fas fa-random"></i></button>
+                    <button class="action-btn prev-btn"><i class="fas fa-step-backward"></i></button>
+                    <button class="play-pause-btn"><i class="fas fa-play"></i></button>
+                    <button class="action-btn next-btn"><i class="fas fa-step-forward"></i></button>
+                    <button class="action-btn repeat-btn" title="Enable repeat"><i class="fas fa-redo-alt"></i></button>
+                </div>
+                <div class="progress-container">
+                    <span class="time current-time">0:00</span>
+                    <div class="progress-bar-wrapper" id="progressBarWrapper">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                    <span class="time total-time">4:03</span>
+                </div>
+            </div>
+
+            <!-- Volume Controls -->
+            <div class="volume-controls">
+                <button class="action-btn"><i class="fas fa-microphone"></i></button>
+                <button class="action-btn"><i class="fas fa-list"></i></button>
+                <button class="action-btn"><i class="fas fa-laptop"></i></button>
+                <div class="volume-wrapper">
+                    <button class="action-btn volume-btn"><i class="fas fa-volume-up"></i></button>
+                    <div class="progress-bar-wrapper" id="volumeBarWrapper">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="action-btn"><i class="fas fa-expand-alt"></i></button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
